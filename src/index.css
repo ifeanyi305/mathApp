@@ -38,9 +38,16 @@ section {
 }
 
 .header {
-  background-color: silver;
   display: flex;
   justify-content: flex-end;
+}
+
+input {
+  border: none;
+  width: 100%;
+  font-size: 15px;
+  padding: 10px;
+  background-color: silver;
 }
 
 .p-tag {
