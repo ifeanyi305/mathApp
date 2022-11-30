@@ -4,22 +4,26 @@ import calculate from './logic/calculate';
 class CalcInterface extends React.Component { // eslint-disable-line
   constructor(props) {
     super(props);
-    this.state = {total: 0, next: null, operation: null}
+    this.state = { total: 0, next: null, operation: null };
   }
 
   handleClick = (event) => {
     const buttonName = event.target.innerText;
     const result = calculate(this.state, buttonName);
-    this.setState(result)
+    this.setState(result);
   }
 
   render() {
-    const {total, next, operation } = this.state;
+    const { total, next, operation } = this.state;
     return (
       <section>
         <div className="calc-container">
           <div className="header">
-            <button type="button" className="p-tag">{total}{operation}{next}</button>
+            <button type="button" className="p-tag">
+              {total}
+              {operation}
+              {next}
+            </button>
           </div>
           <div className="calc-buttons">
             <button type="submit" onClick={this.handleClick}>AC</button>
