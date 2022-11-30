@@ -35,23 +35,30 @@ section {
 
 .calc-container {
   background-color: silver;
+  width: 40%;
+}
+
+@media screen and (min-width: 50em) {
+  .calc-container {
+    background-color: silver;
+    width: 25%;
+  }
 }
 
 .header {
+  background-color: grey;
   display: flex;
   justify-content: flex-end;
 }
 
-input {
-  border: none;
-  width: 100%;
-  font-size: 15px;
-  padding: 10px;
-  background-color: silver;
-}
 
 .p-tag {
-  padding-right: 5px;
+  padding-top: 10px;
+  padding-right: 10px;
+  font-size: 40px;
+  background-color: grey;
+  overflow: hidden;
+  overflow-x: auto;
 }
 
 .calc-buttons {
@@ -77,9 +84,12 @@ button {
     monospace;
 }
 
-button:hover {
+.p-tag:hover {
   background-color: rgb(240, 124, 8);
-  color: #fff;
+}
+
+button:hover {
+  background-color: grey;
 }
 
 .color {
