@@ -6,7 +6,7 @@ class CalcInterface extends React.Component { // eslint-disable-line
       <section>
         <div className="calc-container">
           <div className="header">
-            <input type="number" placeholder='0' className="p-tag" />
+            <input type="number" placeholder="0" className="p-tag" />
           </div>
           <div className="calc-buttons">
             <button type="button">Ac</button>
