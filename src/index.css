@@ -26,7 +26,67 @@ code {
     monospace;
 }
 
-.h1 {
-  font-size: 30px;
-  color: blue;
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.calc-container {
+  background-color: silver;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+input {
+  border: none;
+  width: 100%;
+  font-size: 15px;
+  padding: 10px;
+  background-color: silver;
+}
+
+.p-tag {
+  padding-right: 5px;
+}
+
+.calc-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.span {
+  grid-column: span 2;
+}
+
+button {
+  border: none;
+  background-color: white;
+  font-size: 20px;
+  cursor: pointer;
+  font-family:
+    source-code-pro,
+    Menlo,
+    Monaco,
+    Consolas,
+    'Courier New',
+    monospace;
+}
+
+button:hover {
+  background-color: rgb(240, 124, 8);
+  color: #fff;
+}
+
+.color {
+  background-color: rgb(240, 124, 8);
+}
+
+.color:hover {
+  background-color: #fff;
+  color: rgb(240, 124, 8);
 }
