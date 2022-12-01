@@ -19,15 +19,11 @@ class CalcInterface extends React.Component { // eslint-disable-line
       <section>
         <div className="calc-container">
           <div className="header">
- math-events
             <button type="button" className="p-tag">
               {total}
               {operation}
               {next}
             </button>
-
-            <input type="number" placeholder="0" className="p-tag" />
-development
           </div>
           <div className="calc-buttons">
             <button type="submit" onClick={this.handleClick}>AC</button>
