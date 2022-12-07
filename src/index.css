@@ -27,7 +27,8 @@ code {
     monospace;
 }
 
-section,.quote {
+section,
+.quote {
   display: flex;
   justify-content: center;
   align-items: center;
