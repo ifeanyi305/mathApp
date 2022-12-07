@@ -11,6 +11,9 @@ const CalcInterface = () => {
   const { total, next, operation } = state;
   return (
     <section>
+      <div className="practice">
+        <p>let&apos;s do some maths</p>
+      </div>
       <div className="calc-container">
         <div className="header">
           <button type="button" className="p-tag">
