@@ -1,14 +1,8 @@
+# math-magicians
+
+
 <a name="readme-top"></a>
 
-
-<div align="center">
-
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
-
-  <h3><b>Microverse README Template</b></h3>
-
-</div>
 
 <!-- TABLE OF CONTENTS -->
 
@@ -21,42 +15,57 @@
   - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
   - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ](#faq)
 - [📝 License](#license)
 
-<!-- PROJECT DESCRIPTION -->
 
-# 📖 [Mathapp] <a name="about-project"></a>
+# 📖 math-magicians <a name="about-project"></a>
 
-
-**[Mathapp]** The JavaScript project is a calculator app.
-
+> Math magicians is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to:  Make simple calculations. Read a random math-related quote.
 
 ## 🛠 Built With <a name="built-with"></a>
 
-Html.
-Css.
-JS.
-Webpack.
-jest test
+### Tech Stack <a name="tech-stack"></a>
+
+> 
+- HTML
+
+- CSS
+
+- Javascript 
+
+- React
+
+- Webpack
+
+- NPM
+
+- Lighthouse (An open-source, automated tool for improving the quality of web pages. It has audits for performance, accessibility, progressive web apps, SEO and more).
+
+- Webhint (A customizable linting tool that helps you improve your site's accessibility, speed, cross-browser compatibility, and more by checking your code for best practices and common errors).
+
+- Stylelint (A mighty, modern linter that helps you avoid errors and enforce conventions in your styles).
+
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://reactjs.org/">React.js</a></li>
+  </ul>
+</details>
+
+
+<!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
+> 
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **Make simple calculations.**
+- **Read a random math-related quote.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -64,9 +73,9 @@ jest test
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
+> 
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- [Live Demo Link](https://ifeanyi305calculatorapp.netlify.app)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -74,101 +83,55 @@ jest test
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-
+> 
 To get a local copy up and running, follow these steps.
 
-### Prerequisites
-
-In order to run this project Vscode 
-must have git installed.
-
-<!--
-Example command:
-
-```sh
- gem install rails
-```
- -->
+- npm
+  ```sh
+  npm install npm@latest -g
+  ```
 
 ### Setup
 
-If you installed git you can clone the code to your machine, or download a ZIP of all the files directly.
-
-Download the ZIP from this location, or run the following git command to clone the files to your machine:
-
-<!--
-Example commands:
-
-```sh
-  cd my-folder
-  git clone git@github.com:myaccount/my-project.git
-```
---->
-
-### Install
-
-Install this project with:
-git clone  https://github.com/frnega/capstone-JavaScript
-- Once the files are on your machine,
- open the -capstone-JavaScript_ folder in [Visual Studio Code](https://code.visualstudio.com/), 
- and follow the steps in Installation & Set Up
-
-## 🛠 Installation & Set Up
-
-1. Install Node Modules
-
+1. Clone the repo by running the command
    ```sh
-   npm install
-   
-   2. Start the development server
-
+    git clone https://github.com/ifeanyi305/mathapp
+   ```
+2. Open the directory of the project
    ```sh
-   npm run start
-3. Open [http://localhost:8080](http://localhost:8080) to view it in the browser.
-
-4. Run automated functionality test
-To check for functionality with automated test run npm test
-
-## 🚀 Building and Running for Production
-
-1. Generate a full static production build
-
+   cd math-magicians
+   ```
+3. Install project dependencies
    ```sh
-   npm run build
+   run npm install
+   ```
+4. Open the html file
+   ```sh
+   run npm start
 
-<!--
-Example command:
 
-```sh
-  cd my-project
-  gem install
-```
---->
+### Run tests
+
+To run tests, run the following command:
+
+- npm
+  ```sh
+  npm test
+  ```
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 
-## 👥 Authors <a name="authors"></a>
+## 👥 Author <a name="authors"></a>
 
-
-
-👤 **Author1**
+👤 **Ifeanyi Oti**
 
 - GitHub: [@ifeanyi305](https://github.com/ifeanyi305)
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- FUTURE FEATURES -->
-
-## 🔭 Future Features <a name="future-features"></a>
-
-
-- [ ] **[implement some UX improvements: including transitions and/or animations]**
-- [ ] **[add Reservations popup]**
-- [ ] **[You can implement additional home pages, one page per category of items.]**
+- Twitter: [@otiifeanyi2020](https://twitter.com/Otiifeanyi2020)
+- LinkedIn: [otijoseph](https://www.linkedin.com/in/oti-joseph-ifeanyi/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -198,23 +161,13 @@ If you like this project...
 
 > Give credit to everyone who inspired your codebase.
 
-I would like to thank...
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FAQ (optional) -->
+## Show your support
 
-## ❓ FAQ <a name="faq"></a>
+- Give a ⭐️ if you like this project!
 
-> Add at least 2 questions new developers would ask when they decide to use your project.
-
-- **[Question_1]**
-
-  - [Answer_1]
-
-- **[Question_2]**
-
-  - [Answer_2]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -222,8 +175,6 @@ I would like to thank...
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+- This project is [MIT](./LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
