@@ -6,6 +6,16 @@ function handleClick(event, state, setter) {
   const result = calculate(state, buttonName);
   setter(result);
 }
+
+function Button(props) {
+  return (
+    // eslint-disable-next-line
+    <button type="submit" onClick={(event) => props.handleClick(event, props.state, props.setter)} className={props.className}>
+      {/* eslint-disable-next-line */}
+      {props.label}
+    </button>
+  );
+}
 const CalcInterface = () => {
   const [state, setter] = useState({ total: 0, operation: null, next: null });
   const { total, next, operation } = state;
@@ -23,25 +33,25 @@ const CalcInterface = () => {
           </button>
         </div>
         <div className="calc-buttons">
-          <button type="submit" onClick={(event) => handleClick(event, state, setter)}>AC</button>
-          <button type="submit" onClick={(event) => handleClick(event, state, setter)}>+/-</button>
-          <button type="submit" onClick={(event) => handleClick(event, state, setter)}>%</button>
-          <button type="submit" onClick={(event) => handleClick(event, state, setter)} className="color">÷</button>
-          <button type="submit" onClick={(event) => handleClick(event, state, setter)}>7</button>
-          <button type="submit" onClick={(event) => handleClick(event, state, setter)}>8</button>
-          <button type="submit" onClick={(event) => handleClick(event, state, setter)}>9</button>
-          <button type="submit" onClick={(event) => handleClick(event, state, setter)} className="color">x</button>
-          <button type="submit" onClick={(event) => handleClick(event, state, setter)}>4</button>
-          <button type="submit" onClick={(event) => handleClick(event, state, setter)}>5</button>
-          <button type="submit" onClick={(event) => handleClick(event, state, setter)}>6</button>
-          <button type="submit" onClick={(event) => handleClick(event, state, setter)} className="color">-</button>
-          <button type="submit" onClick={(event) => handleClick(event, state, setter)}>1</button>
-          <button type="submit" onClick={(event) => handleClick(event, state, setter)}>2</button>
-          <button type="submit" onClick={(event) => handleClick(event, state, setter)}>3</button>
-          <button type="submit" onClick={(event) => handleClick(event, state, setter)} className="color">+</button>
-          <button type="submit" onClick={(event) => handleClick(event, state, setter)} className="span">0</button>
-          <button type="submit" onClick={(event) => handleClick(event, state, setter)}>.</button>
-          <button type="submit" onClick={(event) => handleClick(event, state, setter)} className="color">=</button>
+          <Button label="AC" handleClick={handleClick} state={state} setter={setter} />
+          <Button label="+/-" handleClick={handleClick} state={state} setter={setter} />
+          <Button label="%" handleClick={handleClick} state={state} setter={setter} />
+          <Button label="÷" handleClick={handleClick} state={state} setter={setter} className="color" />
+          <Button label="7" handleClick={handleClick} state={state} setter={setter} />
+          <Button label="8" handleClick={handleClick} state={state} setter={setter} />
+          <Button label="9" handleClick={handleClick} state={state} setter={setter} />
+          <Button label="x" handleClick={handleClick} state={state} setter={setter} className="color" />
+          <Button label="4" handleClick={handleClick} state={state} setter={setter} />
+          <Button label="5" handleClick={handleClick} state={state} setter={setter} />
+          <Button label="6" handleClick={handleClick} state={state} setter={setter} />
+          <Button label="-" handleClick={handleClick} state={state} setter={setter} className="color" />
+          <Button label="1" handleClick={handleClick} state={state} setter={setter} />
+          <Button label="2" handleClick={handleClick} state={state} setter={setter} />
+          <Button label="3" handleClick={handleClick} state={state} setter={setter} />
+          <Button label="+" handleClick={handleClick} state={state} setter={setter} className="color" />
+          <Button label="0" handleClick={handleClick} state={state} setter={setter} className="span" />
+          <Button label="." handleClick={handleClick} state={state} setter={setter} />
+          <Button label="=" handleClick={handleClick} state={state} setter={setter} className="color" />
         </div>
       </div>
     </section>
